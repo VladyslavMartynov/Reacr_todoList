@@ -1,0 +1,63 @@
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input__submit {
+    display: flex;
+    justify-content: center;
+}
+
+.todo__slogan {
+    text-align: center;
+}
+
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 10px 10px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.input__btn {
+    cursor: pointer;
+    padding: 10px 30px 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: green;
+    border: 1px solid white;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+}
+
+input:checked + span {
+    text-decoration: line-through;
+}
+
